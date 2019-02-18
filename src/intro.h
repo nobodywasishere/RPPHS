@@ -19,13 +19,12 @@ private:
   int introState;
   int introTimer;
   int letterCounter[3];
-  vita2d_texture *g33Splash, *motoSplash;
+  vita2d_texture *splashImage, *g33Splash, *motoSplash;
   int fade;
 public:
   Intro();
   void doIntro();
-  void introG33();
-  void introMoto();
+  void introSplash(vita2d_texture *splashImage);
   void saveWarning();
 };
 
